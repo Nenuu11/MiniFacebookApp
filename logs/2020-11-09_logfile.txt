@@ -1,0 +1,273 @@
+2020-11-09 03:10:37.9037 INFO Adding Post to the database....
+2020-11-09 03:10:42.5181 ERROR Something went wrong: System.Exception: Exception while adding the post to database.
+   at aphrie.app.Controllers.PostController.AddPostAsync(PostModel post) in C:\Users\nehal\Desktop\aphrie\aphrie.app\Controllers\PostController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at aphrie.app.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\nehal\Desktop\aphrie\aphrie.app\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 27
+2020-11-09 03:13:20.2484 INFO Adding Post to the database....
+2020-11-09 03:13:21.8419 INFO Returning --> Your post has been added.
+2020-11-09 03:23:48.3138 INFO Registering Account....
+2020-11-09 03:23:49.3149 INFO Account Registered Successfully.
+2020-11-09 10:46:08.7028 INFO Registering Account....
+2020-11-09 10:46:40.2770 ERROR Something went wrong: System.Exception: Exception while Creating the account.
+   at aphrie.app.Controllers.AuthenticationController.RegisterAsync(RegisterModel model) in C:\Users\nehal\Desktop\aphrie\aphrie.app\Controllers\AuthenticationController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at aphrie.app.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\nehal\Desktop\aphrie\aphrie.app\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 27
+2020-11-09 12:15:26.0256 ERROR Something went wrong: Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - aphrie.app.Controllers.PostController.Get (aphrie.app). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at aphrie.app.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\nehal\Desktop\aphrie\aphrie.app\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 27
+2020-11-09 12:17:57.6543 ERROR Something went wrong: Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - aphrie.app.Controllers.PostController.Get (aphrie.app). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at aphrie.app.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\nehal\Desktop\aphrie\aphrie.app\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 27
+2020-11-09 12:19:57.2850 ERROR Something went wrong: Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - aphrie.app.Controllers.PostController.Get (aphrie.app). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at aphrie.app.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\nehal\Desktop\aphrie\aphrie.app\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 27
+2020-11-09 12:24:00.0453 ERROR Something went wrong: Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - aphrie.app.Controllers.PostController.Get (aphrie.app). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at aphrie.app.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\nehal\Desktop\aphrie\aphrie.app\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 27
+2020-11-09 12:25:15.8615 ERROR Something went wrong: Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - aphrie.app.Controllers.PostController.Get (aphrie.app). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at aphrie.app.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\nehal\Desktop\aphrie\aphrie.app\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 27
+2020-11-09 12:29:23.8761 ERROR Something went wrong: Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - aphrie.app.Controllers.PostController.Get (aphrie.app). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at aphrie.app.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\nehal\Desktop\aphrie\aphrie.app\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 27
+2020-11-09 12:36:29.5891 ERROR Something went wrong: Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - aphrie.app.Controllers.PostController.Get (aphrie.app). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at aphrie.app.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\nehal\Desktop\aphrie\aphrie.app\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 27
+2020-11-09 12:39:35.2329 ERROR Something went wrong: Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - aphrie.app.Controllers.PostController.Get (aphrie.app). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at aphrie.app.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\nehal\Desktop\aphrie\aphrie.app\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 27
+2020-11-09 12:40:19.5137 ERROR Something went wrong: Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - aphrie.app.Controllers.PostController.Get (aphrie.app). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at aphrie.app.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\nehal\Desktop\aphrie\aphrie.app\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 27
+2020-11-09 12:41:02.6398 ERROR Something went wrong: Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - aphrie.app.Controllers.PostController.Get (aphrie.app). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at aphrie.app.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\nehal\Desktop\aphrie\aphrie.app\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 27
+2020-11-09 12:43:40.3463 ERROR Something went wrong: Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - aphrie.app.Controllers.PostController.Get (aphrie.app). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at aphrie.app.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\nehal\Desktop\aphrie\aphrie.app\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 27
+2020-11-09 12:45:29.2776 ERROR Something went wrong: Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - aphrie.app.Controllers.PostController.Get (aphrie.app). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at aphrie.app.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\nehal\Desktop\aphrie\aphrie.app\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 27
+2020-11-09 12:45:49.2020 ERROR Something went wrong: Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - aphrie.app.Controllers.PostController.Get (aphrie.app). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at aphrie.app.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\nehal\Desktop\aphrie\aphrie.app\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 27
+2020-11-09 12:46:36.4839 ERROR Something went wrong: Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - aphrie.app.Controllers.PostController.Get (aphrie.app). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at aphrie.app.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\nehal\Desktop\aphrie\aphrie.app\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 27
+2020-11-09 12:48:01.8270 ERROR Something went wrong: Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - aphrie.app.Controllers.PostController.Get (aphrie.app). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at aphrie.app.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\nehal\Desktop\aphrie\aphrie.app\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 27
+2020-11-09 12:49:30.3728 ERROR Something went wrong: Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - aphrie.app.Controllers.PostController.Get (aphrie.app). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at aphrie.app.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\nehal\Desktop\aphrie\aphrie.app\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 27
+2020-11-09 12:50:07.1894 ERROR Something went wrong: Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - aphrie.app.Controllers.PostController.Get (aphrie.app). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at aphrie.app.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\nehal\Desktop\aphrie\aphrie.app\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 27
+2020-11-09 12:51:34.0935 ERROR Something went wrong: Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - aphrie.app.Controllers.PostController.Get (aphrie.app). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at aphrie.app.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\nehal\Desktop\aphrie\aphrie.app\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 27
+2020-11-09 12:52:28.3105 ERROR Something went wrong: Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - aphrie.app.Controllers.PostController.Get (aphrie.app). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at aphrie.app.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\nehal\Desktop\aphrie\aphrie.app\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 27
+2020-11-09 13:45:57.2171 ERROR Something went wrong: Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - aphrie.app.Controllers.PostController.Get (aphrie.app). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at aphrie.app.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\nehal\Desktop\aphrie\aphrie.app\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 27
+2020-11-09 13:48:24.4869 INFO Login...
+2020-11-09 13:48:27.1546 INFO Successfully Logged in
+2020-11-09 13:49:56.2867 ERROR Something went wrong: System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Localization.IStringLocalizer`1[aphrie.app.Localize.Resource]' while attempting to activate 'aphrie.app.Controllers.PostController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at aphrie.app.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\nehal\Desktop\aphrie\aphrie.app\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 27
+2020-11-09 13:51:03.8818 INFO Login...
+2020-11-09 13:51:04.2052 INFO Successfully Logged in
+2020-11-09 13:51:19.5274 ERROR Something went wrong: System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Localization.IStringLocalizer`1[aphrie.app.Localize.Resource]' while attempting to activate 'aphrie.app.Controllers.PostController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at aphrie.app.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\nehal\Desktop\aphrie\aphrie.app\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 27
+2020-11-09 13:52:23.2181 INFO Login...
+2020-11-09 13:52:24.0365 INFO Successfully Logged in
+2020-11-09 13:52:47.5313 ERROR Something went wrong: System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Localization.IStringLocalizer`1[aphrie.app.Localize.Resource]' while attempting to activate 'aphrie.app.Controllers.PostController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at aphrie.app.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\nehal\Desktop\aphrie\aphrie.app\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 27
+2020-11-09 13:53:49.6912 INFO Login...
+2020-11-09 13:53:50.4967 INFO Successfully Logged in
+2020-11-09 13:54:12.1678 INFO Fetching all posts from database..
+2020-11-09 13:54:13.5302 INFO Returning --> posts has been returned.
+2020-11-09 18:38:59.1545 INFO Login...
+2020-11-09 18:39:06.3795 INFO Successfully Logged in
+2020-11-09 18:44:22.2870 INFO Login...
+2020-11-09 18:44:23.2042 INFO Successfully Logged in
+2020-11-09 18:54:47.1124 INFO Login...
+2020-11-09 18:54:47.9199 INFO Successfully Logged in
+2020-11-09 19:48:34.7657 INFO Registering Account....
+2020-11-09 19:48:42.8768 INFO Account Registered Successfully.
+2020-11-09 19:50:18.9234 INFO Registering Account....
+2020-11-09 19:50:23.4282 INFO Account Registered Successfully.
+2020-11-09 19:51:42.0924 INFO Login...
+2020-11-09 19:51:42.1363 INFO Successfully Logged in
+2020-11-09 19:52:34.2909 INFO Adding friend...
+2020-11-09 19:52:35.4672 INFO Returning --> Your friend taha@gmail.com has been added.
+2020-11-09 19:53:15.9883 INFO Adding friend...
+2020-11-09 19:53:16.0078 INFO Returning --> Your friend nehal@gmail.com has been added.
+2020-11-09 19:53:21.0955 INFO Adding friend...
+2020-11-09 19:53:21.1101 INFO Returning --> nehal@gmail.com is already your friend.
+2020-11-09 19:53:28.6250 INFO Adding friend...
+2020-11-09 19:53:28.6250 INFO Returning --> There is no user with this email. Please, enter another username..
+2020-11-09 19:53:37.7094 INFO Adding friend...
+2020-11-09 19:53:37.7251 INFO Returning --> This username belongs to the logged in user. please, try a different one..
+2020-11-09 19:54:19.1798 INFO Adding Post to the database....
+2020-11-09 19:54:20.1307 INFO Returning --> Your post has been added.
+2020-11-09 19:54:54.1816 INFO Adding Post to the database....
+2020-11-09 19:55:01.6898 INFO Returning --> Your post has been added.
+2020-11-09 19:55:28.2685 INFO Fetching all posts from database..
+2020-11-09 19:55:29.4896 INFO Returning --> posts has been returned.
+2020-11-09 19:56:32.6853 INFO Login...
+2020-11-09 19:56:32.7252 INFO Successfully Logged in
+2020-11-09 19:56:52.6471 INFO Fetching all posts from database..
+2020-11-09 19:56:53.0090 INFO Returning --> posts has been returned.
+2020-11-09 19:58:15.0222 INFO Fetching all posts from database..
+2020-11-09 19:59:49.5290 INFO Login...
+2020-11-09 19:59:50.4122 INFO Successfully Logged in
+2020-11-09 20:00:21.2769 INFO Adding friend...
+2020-11-09 20:00:21.4159 INFO Returning --> Your friend hamsa@gmail.com has been added.
+2020-11-09 20:00:33.2486 INFO Fetching all posts from database..
+2020-11-09 20:02:36.5331 INFO Login...
+2020-11-09 20:02:37.3121 INFO Successfully Logged in
+2020-11-09 20:02:55.7005 INFO Fetching all posts from database..
+2020-11-09 20:02:55.7501 INFO Returning --> posts has been returned.
+2020-11-09 20:04:39.2939 INFO Login...
+2020-11-09 20:04:39.4341 INFO Successfully Logged in
+2020-11-09 20:04:50.0283 INFO Login...
+2020-11-09 20:04:50.0613 INFO Successfully Logged in
+2020-11-09 20:05:14.5564 INFO Fetching all posts from database..
+2020-11-09 20:05:14.5981 INFO Returning --> posts has been returned.
+2020-11-09 20:10:10.0375 INFO Deleting post....
+2020-11-09 20:10:13.2109 INFO Returning --> Your Post has been deleted.
+2020-11-09 20:10:53.0087 INFO Deleting post....
+2020-11-09 20:10:53.0270 INFO Returning --> Not post found with this Id to be removed.
+2020-11-09 20:11:14.1387 INFO Deleting post....
+2020-11-09 20:11:14.1552 INFO Returning --> Not post found with this Id to be removed.

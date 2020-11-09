@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\aphrie.DBL\aphrie.DBL.csproj" />
+    <ProjectReference Include="..\aphrie.Repo\aphrie.Repo.csproj" />
+  </ItemGroup>
+
+</Project>
